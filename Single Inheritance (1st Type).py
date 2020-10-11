@@ -20,6 +20,11 @@ class Father:
     def showmoney(cls):
         print("Parent class class method",cls.money)
         
+    @staticmethod
+    def stat():
+        a=10
+        print("Parent Class Static Method",a)
+        
 class Son(Father):
     def dis(self):
         print("Child class instance method")
@@ -30,3 +35,5 @@ s.dis()
 #since inherited can class father class methods
 s.show()
 s.showmoney()
+s.stat()
+s.stat()
